@@ -12,7 +12,7 @@ Projet from scratch, création d'un pokédex avec Node/Express permettant :
   - ejs
   - dotenv
   - pg
-  - postgresql
+  - postgresql en local
  
 ## Setup
 
