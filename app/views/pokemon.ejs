@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+    <main class="pokemon_container">
+
+        <article class="pokemon_article">    
+            <h1 class="pokemon_name">Détails de <%=pokemon[0].nom%></h1>       
+            <div class="pokemon_detail">
+                <div class="pokemon_image">
+                    <img src="/img/<%=pokemon[0].numero%>.png" alt="<%=pokemon[0].nom%>">
+                </div>
+                <div class="pokemon_desc">
+                    <h2>#<%=pokemon[0].numero%> <%=pokemon[0].nom%></h2>
+                    <div class="pokemon_button_type">
+                        <a href="#" class=" button_all button_<%=pokemon[0].name%>"><%=pokemon[0].name%></a>
+                      <% if(pokemon[1]){ %> 
+                        <a href="#" class="button_all button_<%=pokemon[1].name%>"><%=pokemon[1].name%></a>
+                     <% } %>
+                    </div>
+                    <h3>Statistiques</h3>
+                
+                <% for(i=2; i<8; i++) { %>
+                    <div class="pokemon_progressbox">
+                        <h4 class="progressbox_title"><%= pokemonKey[i]%></h4>
+                        <label for="<%= pokemonKey[i]%>" class="progressbox_label"><%=pokemonValue[i]%></label>
+                        <progress id="<%= pokemonKey[i]%>" class="pokemon_bar" max="255" value="<%=pokemonValue[i]%>"></progress>
+                    </div>
+                <% } %>
+
+                </div>
+            </div>
+        </article>
+
+        <%- include('partials/footer') %>

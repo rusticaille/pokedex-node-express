@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+    <main class="container">
+        <p class="type_instruction">Cliquez sur un type pour voir tous les pokemons de ce type.</p>
+        <article class="pokemon_type"> 
+
+        <% pokemonTypes.forEach(pokemonType => { %>
+            <a href="/pokemons/<%=pokemonType.name%>" class="button_type button_<%=pokemonType.name%>"><%=pokemonType.name%></a>
+            <% }) %>
+            
+        </article>
+
+<%- include('partials/footer') %>

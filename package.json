@@ -1,0 +1,26 @@
+{
+  "name": "pokedex-node-express",
+  "version": "1.0.0",
+  "description": "(mars 2021) Projet from scratch, création d'un pokédex avec Node/Express permettant :   - consulter la liste des pokémons   - voir le détail de chaque pokémon   - filtrer les pokémons par types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rusticaille/pokedex-node-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rusticaille/pokedex-node-express/issues"
+  },
+  "homepage": "https://github.com/rusticaille/pokedex-node-express#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "postgresql": "0.0.1"
+  }
+}
